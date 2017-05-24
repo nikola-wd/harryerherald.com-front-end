@@ -1,0 +1,43 @@
+/* helpers */
+.flex { display: flex; }
+
+
+
+// margins 
+.mb0 { margin-bottom: 0; }
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb30 { margin-bottom: 30px; }
+
+
+.p-tb {
+    padding-top:    60px;
+    padding-bottom: 60px;
+}
+
+
+// link underline decoration helpers
+.tdu { text-decoration: underline; }
+.htdu:hover { text-decoration: underline !important; }
+
+
+
+
+// bg-color helper classes 
+.bg-brand { background-color: $c-brand; }
+
+.bg-f {
+    background-color: #fff;
+}
+
+
+.bg-gray {
+    background-color: $c-gray;
+}
+
+
+
+// txt-color helper classes 
+.c-brand  { color: $c-brand; }  

@@ -1,0 +1,56 @@
+/* homepage */
+section.rel {
+    position: relative;
+    
+    &:before {
+        @extend %con-abs;
+        right:  0;
+        top:    0;
+        width:  0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 100vw 50px 0;
+        z-index: 1;
+        border-color: transparent salmon transparent transparent;
+    }
+    
+    
+    &:after {
+        @extend %con-abs;
+        left:  0;
+        top:    0;
+        width:  0;
+        height: 0;
+        border-style: solid;
+        border-width: 60px 600px 0 0;
+        z-index: 0;
+        border-color: $c-gray transparent transparent transparent;
+    }
+    
+    
+    &.triangle--brand {
+        
+        &:before {
+            border-color: transparent $c-brand transparent transparent;
+        }
+    }
+}
+
+
+.well {
+    
+    p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+.contact {
+    
+    .container {
+        max-width: 700px;
+    }
+}

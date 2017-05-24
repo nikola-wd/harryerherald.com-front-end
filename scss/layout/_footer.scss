@@ -1,0 +1,96 @@
+/* footer */
+
+.footer {
+	background: url(img/noisy-texture-100x100-o2-d22-c-353535-t0.png);
+	color: #fff;
+	font-size:  12px;
+    padding-top: 25px;
+    
+    *:not(h4) {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    span {
+        margin: 0 10px;
+    }
+    
+    > .container {
+        padding-top: 25px;
+    }
+    
+    &__btm {
+        padding: 5px 0;
+        
+        p {
+            margin-bottom: 0;
+        }
+    }
+    
+    h4 {
+        font-weight: 400;
+    }
+    
+    a {
+        text-transform: capitalize;
+        
+        &:hover {
+            color: $c-brand;
+        }
+    }
+    
+    
+    
+    &__top {
+        position: relative;
+        
+        &:before {
+            @extend %con-abs;
+            right:  0;
+            bottom: 0;
+            width:  0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 30px 100vw;
+            border-color: transparent transparent salmon transparent;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.f-brand {
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+
+
+
+.design-by {
+    clear: both;
+    margin-top: 110px;
+    
+    p {
+        margin-bottom: 0;
+    }
+    
+    a {
+        display: block;
+        width: 179px;
+        
+        img {
+            width: 100%;
+        }
+        
+        &:hover {
+            opacity: .8;
+        }
+    }
+}

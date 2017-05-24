@@ -1,0 +1,50 @@
+//color variables
+$c-brand  : #4784bb;
+$c-brand--d  : darken($c-brand, 2);
+
+$c-txt    : #353535;
+$c-gray   : $c-txt;
+$c-silver : #f5f5f5;
+
+
+
+//fonts variables
+$font-def      : 'Lato', Arial, sans-serif;
+$font-headings : 'Exo', sans-serif;
+
+
+
+
+
+
+//extends
+%clearfix {
+	
+	&:before, 
+	&:after {
+		content: " "; 
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+
+%flex {
+	display: flex;
+}
+
+
+%con-abs {
+	content: "";
+	position: absolute;
+}
+
+
+%bgncc {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

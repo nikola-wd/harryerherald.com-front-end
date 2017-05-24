@@ -1,0 +1,178 @@
+/* header */
+
+.header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+	background: #fff;
+    box-shadow: 0 2px 9px rgba(0,0,0, .45);
+    
+    
+    &__top {
+        background: url(img/noisy-texture-100x100-o2-d22-c-353535-t0.png);
+        
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+.contact--header {
+    margin-top: 7px;
+
+    a {
+        margin-right: 25px;
+    }
+}
+
+
+.soc--header {
+    padding: 6px 0;
+}
+
+
+
+
+.navbar {
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+
+.navbar-nav {
+	background-color: #fff;
+    transform: translateY(50%);
+    transition: all .3s ease-in-out;
+}
+
+
+.navbar-brand {
+	height: auto;
+	width: 230px;
+    transition: all .3s ease-in-out;
+    
+    img {
+        width: 100%;
+    }
+}
+
+ 
+.navbar-nav > li {
+    margin-left: 50px;
+    transition: all .3s ease-in-out;
+}
+
+
+.navbar-nav > li > a, 
+.navbar-nav > li > a:focus {
+    position: relative;
+    padding-left:  0;
+    padding-right: 0;
+    background: none !important;
+	color: $c-brand;
+    font-family: $font-headings;
+	font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+	text-decoration: none;
+	transition: all .3s ease-in-out;
+    
+    &:before {
+        @extend %con-abs;
+        top:   100%;
+        left:    0;
+        width:   0;
+        height: 2px;
+        opacity: 0;
+        background-color: $c-brand;
+        transition: all .3s ease-in-out;
+    }
+}
+
+
+
+.navbar-nav > li.active > a,
+.navbar-nav > li > a:hover {
+  background-color: transparent !important;
+  color: $c-brand--d;
+    
+    &:before {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+	.navbar-nav > li {
+		margin-right: 0 !important;
+		text-align: center;
+		padding: 6px 0;
+	}
+
+	.navbar-nav {
+		padding: 0 15px;
+		margin-bottom: 10px;
+	}
+
+
+
+	.navbar-toggle {
+		border-radius: 0;
+		padding: 0;
+		margin-top: 14px;
+
+		.icon-bar {
+			background-color: $c-brand;
+			height: 4px;
+			border-radius: 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .header.js-isCollapsed {
+        
+        .navbar-brand {
+            width: 200px;
+            padding-top:    8px;
+            padding-bottom: 8px;
+        }
+        
+        .navbar-nav {
+            transform: translateY(12px);
+            
+            > li {
+                margin-left: 30px;
+                
+                > a {
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

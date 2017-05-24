@@ -1,0 +1,55 @@
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: $font-headings;
+}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+
+.line-below {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    
+    &:before {
+        @extend %con-abs;
+        top: 100%;
+        left: 0;
+        height: 3px;
+        width: 100px;
+        background-color: $c-brand;
+    }
+    
+    &--r {
+        
+        &:before {
+            left: auto;
+            right: 0;
+        }
+    }
+    
+    
+    &--sm {
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        
+        &:before {
+            height: 2px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.soc {
+    
+    a {
+        margin-left: 8px;
+    }
+}
+
+
+
+
+.next-section {
+    z-index: 2;
+    display: inline-block;
+    position: absolute;
+    width:  35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0,0,0, .45);
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $c-gray;
+    color: #fff !important;
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+        background-color: darken($c-gray, 4);
+    }
+    
+    i {
+        pointe: none;
+        font-size: 20px;
+        line-height: 35px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: movearrow .7s cubic-bezier(0, 0.92, 0.39, 0.92) infinite alternate;
+    }
+}
+
+// animation for arrow down
+@keyframes movearrow {
+  0% {
+    top: 45%; }
+  100% {
+    top: 55%; } 
+}
