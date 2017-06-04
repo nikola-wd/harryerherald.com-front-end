@@ -2256,8 +2256,7 @@ p {
 
 .hero--home {
   position: relative;
-  margin-top: 134px;
-  background: url("img/hero.jpg") no-repeat top center/cover;
+  background: url("img/hero1.jpg") no-repeat top center/cover;
   box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.7); }
   .hero--home:before {
     width: 100%;
@@ -2267,16 +2266,16 @@ p {
     background: url(img/dot.png); }
   .hero--home .container {
     position: relative;
-    height: 500px; }
+    height: 634px; }
     .hero--home .container * {
       color: #fff; }
   .hero--home__content {
     position: relative;
-    top: 50%;
+    top: calc(50% + 67px);
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
     max-width: 50%;
     padding: 25px; }
